@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+    <head> 
+        <title>Nadzalla Diva Asmara Sutedja</title> 
+        <style>
+            /*mengatur pada bagian body*/
+            body{
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: lightblue;
+            }
+
+            /*mengatur pada bagian nama*/
+            .name{
+                font-size:xx-large;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            /*mengatur container yang berisi foto dan informasi umum*/
+            .box{
+                display: flex;
+                width: 700px;
+                height: 400px;
+                padding: 20px;
+                background-color: #F5EFE6;
+                margin: 50px;
+                text-align: left;
+            }
+
+            /*mengatur ukuran gambar*/
+            .box img{
+                width: 350px;
+                height: 400px;
+                margin-right: 20px; 
+            }
+
+            /*mengatur posisi text pada informasi umum*/
+            .text {
+                display: flex;
+                flex-direction: column; 
+                text-align: justify;
+            }
+
+            /*container untuk bagian pengalaman, riwayat pendidikan dan kontak */
+            .box2 {
+                display: flex;
+                gap: 20px;
+                width: 1000px;
+                flex-wrap: wrap; /*responsif terhadap layar lebih kecil*/
+            }
+            
+            .column-box{
+                flex : 1; /* dapat menyesuaikan*/
+                background-color: beige;
+                margin-bottom: 50px;
+            }
+
+            .column-box2{
+                flex : 1; /* dapat menyesuaikan*/
+                background-color: #F5EFE6;
+                margin-bottom: 50px;
+                
+            }
+
+            /*mengatur setiap h2 pada column box*/
+            .column-box h2{
+                text-align: center;
+            }
+
+            .column-box2 h2{
+                text-align: center;
+            }
+
+            /*mengatur setiap p pada column box*/
+            .column-box p{
+                font-weight: bold;
+            }
+
+            .column-box2 p{
+                text-align: center;
+            }
+
+            /*mengatur setiap a pada column box*/
+            .column-box2 a{
+                text-align: center;
+                display: block;
+                margin-bottom: 20px;
+            }
+        
+         /*mengatur arah navigasi*/
+        .nav {
+            width: 100%;
+            background-color: beige;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+           
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #555;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+         /*mengatur agar terlihat bahwa itu bisa di klik*/
+        .nav a:hover {
+            background-color: #777;
+        }
+        </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#personal">Informasi Singkat</a>
+        <a href="#pengalaman">Pengalaman & Keahlian</a>
+        <a href="#pendidikan">Riwayat Pendidikan</a>
+        <a href="#kontak">Kontak</a>
+    </div>
+    <!-- FOTO DAN DATA DIRI -->
+    <div class="box" id="personal">
+            <img src="uploads/Naya.jpg" >
+            <div class="text">
+                <p class="name">Nadzalla Diva Asmara Sutedja</p>
+                <p>Merupakan Seorang Mahasiswa Ilmu Komputer di Universitas Pendidikan Indonesia Fakultas Pendidikan Matematika
+                    dan Ilmu Pengetahuan Alam sejak tahun 2025. Memiliki kemampuan berkomunikasi dan berdaptasi dengan baik serta percaya diri 
+                    dalam menyelesaikan setiap pekerjaan tepat waktu </p>
+                <p>Lahir pada tanggal 10 april 2006, Memiliki hobi eksplorasi alam, selain itu memiliki minat yang cukup besar dalam memainkan dan mempelajari alat musik di waktu 
+                    senggang sebagai pengisi waktu luang.</p>
+            </div>
+    </div>
+
+    <!-- PENGALAMAN DAN RIWAYAT PENDIDIKAN -->
+    <div class="box2" id="pengalaman">
+        <div class = "column-box">
+            <h2>Pengalaman</h2>
+            <ul>
+                <p>Juli 2025 - Agustus 2025</p>
+                <li>BNSP Junior Cyber Security</li>
+                <p>Januari 2025 - Februari 2025</p>
+                <li>Panitia Acara Fakultas</li>
+            </ul>
+            <h2>Keahlian</h2>
+            <ul>
+                <li>Mampu bekerja sama dalam tim</li>
+                <li>Dapat berkomunikasi dengan baik</li>
+                <li>Dapat beradaptasi dengan baik</li>
+                <li>Menguasai Micrososft Excel dan Microsoft Word</li>
+            </ul>
+        </div>
+        
+        <div class = "column-box" id="pendidikan">
+            <h2>Riwayat Pendidikan</h2>
+            <ul>
+                <p>2012 - 2018</p>
+                <li>SDN 054 Tikukur Bandung</li>
+                <p>2018- 2021</p>
+                <li>SMPN 44 Bandung</li>
+                <p>2021 - 2024</p>
+                <li>SMAN 20 Bandung</li>
+                <p>2024 - sekarang</p>
+                <li>SDN 054 Tikukur Bandung</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- KONTAK -->
+    <div class="box2" id="kontak">
+        <div class = "column-box2">
+            <h2>WhatsApp</h2>
+            <p>+628212349500</p>
+            <!-- link untuk langsung masuk ke wa -->
+            <a href="https://wa.me/qr/Q33OMH3V6AH3F1">nadzallad_whatsapp</a>
+         
+        </div>
+        
+        <div class = "column-box2">
+            <h2>Instagram</h2>
+            <p>@nadzallad</p>
+            <!-- link untuk langsung masuk ke ig-->
+            <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=43933qy">nadzallad_instagram</a>
+        </div>
+
+        <div class = "column-box2">
+            <h2>Line</h2>
+            <p>id : nadzallad</p>
+            <!-- link untuk langsung masuk ke line-->
+            <a href=" https://line.me/ti/p/V1bMakrFVb">nadzallad_line</a>
+        </div>
+
+        <div class = "column-box2">
+            <h2>Email</h2>
+            <p>id : nadzallad@upi.edu</p>
+            <!-- link untuk langsung masuk ke email-->
+            <a href="https://mail.google.com/mail/u/0/#inbox">nadzallad_email</a>
+        </div>
+    </div>
+      
+</body>
+</html>
